@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body 
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #2f363e;
+	gap: 100px;
+}
+.container 
+{
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+	position: relative;
+	min-width: 350px;
+	min-height: 500px;
+	border-radius: 30px;
+	padding: 50px;
+	background: #2f363e;
+	box-shadow: 25px 25px 75px rgba(0,0,0,0.25),
+  10px 10px 70px rgba(0,0,0,0.25),
+  inset 5px 5px 10px rgba(0,0,0,0.5),
+  inset 5px 5px 20px rgba(255,255,255,0.2),
+  inset -5px -5px 15px rgba(0,0,0,0.75);
+
+}
+.container .txt {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.container .txt h3 
+{
+	color: #dfe0e1;
+	font-weight: 700;
+	font-size: 1.2em;
+	margin-bottom: 20px;
+}
+.container .txt p{
+    padding: 1vh;
+    margin: 1vh;
+	font-weight: 500;
+    color: #dfe0e1;
+    font-size: 1em;
+    text-align: justify;
+}
+/*PART1*/
+.container .part1  .list 
+{
+    width: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin: 20px 0;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.container .part1  .list::before 
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 45px;
+	height: 45px;
+	border-radius: 22.5px;
+	background: #29fd53;
+	box-shadow: 5px 5px 7px rgba(0,0,0,0.25),
+  inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+  inset -3px -3px 5px rgba(0,0,0,0.5);
+	transition: 0.5s;
+}
+.container .part1  .list:hover::before 
+{
+	width: 100%;
+}
+.container .part1  .list:last-child 
+{
+	margin-bottom: 0;
+}
+.container .part1  .list .rank 
+{
+	position: relative;
+	min-width: 45px;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.container .part1  .list .rank::before 
+{
+	content: '';
+	position: absolute;
+	top: 7.5px;
+	left: 7.5px;
+	width: 30px;
+	height: 30px;
+	background: #2f363e;
+	border-radius: 35px;
+	transform: scale(0);
+	transition: 0.5s;
+}
+.container .part1  .list:hover .rank::before 
+{
+	transform: scale(1);
+}
+.container .part1  .list .rank span 
+{
+	position: relative;
+	color: #fff;
+	font-weight: 600;
+	font-size: 1em;
+	transition: 0.5s;
+}
+.container .part1  .list:hover .rank span 
+{
+	color: #fff;
+}
+.container .part1  .list .creator 
+{
+	position: relative;
+	line-height: 1.15em;
+}
+.container .part1  .list .creator h4 
+{
+	font-weight: 600;
+	color: #bcbec0;
+	transition: 0.5s;
+}
+.container .part1  .list .creator p 
+{
+	font-weight: 400;
+	font-size: 0.85em;
+	color: #95999d;
+	transition: 0.5s;
+}
+
+.container .part1  .list:hover .creator h4, 
+.container .part1  .list:hover .creator p 
+{
+	color: #fff;
+}
+/*part2*/
+.container .part2 .list 
+{
+    width: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin: 20px 0;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.container .part2 .list::before 
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 45px;
+	height: 45px;
+	border-radius: 22.5px;
+	background: #29fd53;
+	box-shadow: 5px 5px 7px rgba(0,0,0,0.25),
+  inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+  inset -3px -3px 5px rgba(0,0,0,0.5);
+	transition: 0.5s;
+}
+.container .part2 .list:hover::before 
+{
+	width: 100%;
+}
+.container .part2 .list:last-child 
+{
+	margin-bottom: 0;
+}
+.container .part2 .list .rank 
+{
+	position: relative;
+	min-width: 45px;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.container .part2 .list .rank::before 
+{
+	content: '';
+	position: absolute;
+	top: 7.5px;
+	left: 7.5px;
+	width: 30px;
+	height: 30px;
+	background: #2f363e;
+	border-radius: 35px;
+	transform: scale(0);
+	transition: 0.5s;
+}
+.container .part2 .list:hover .rank::before 
+{
+	transform: scale(1);
+}
+.container .part2 .list .rank span 
+{
+	position: relative;
+	color: #fff;
+	font-weight: 600;
+	font-size: 1em;
+	transition: 0.5s;
+}
+.container .part2 .list:hover .rank span 
+{
+	color: #fff;
+}
+.container .part2 .list .creator 
+{
+	position: relative;
+	line-height: 1.15em;
+}
+.container .part2 .list .creator h4 
+{
+	font-weight: 600;
+	color: #bcbec0;
+	transition: 0.5s;
+}
+.container .part2 .list .creator p 
+{
+	font-weight: 400;
+	font-size: 0.85em;
+	color: #95999d;
+	transition: 0.5s;
+}
+
+.container .part2 .list:hover .creator h4, 
+.container .part2 .list:hover .creator p 
+{
+	color: #fff;
+}
